@@ -181,7 +181,7 @@ img {
 		margin: auto;
 		margin-top: 100px;
 		transition: 2s;
-		z-index: 999;
+	
 		
 	}
 	.smallwork li{
@@ -193,7 +193,7 @@ img {
 		position: relative;
 		cursor: pointer;
 		background: #f6f6f6;
-		z-index: 999;
+
 	}
 	.smallwork img{
 		width: 370px;
@@ -510,13 +510,13 @@ transform: translateZ(-200px);
     color: #ffffff;
     color: #00c0ff;
     line-height: 75px;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     float: left;
     margin: 20px;
     font-family: Microsoft JhengHei;
 	position: relative;
-	
+
 }
 .banner-bin-a span{
 	display: inline-block;
@@ -547,7 +547,7 @@ transform: translateZ(-200px);
 	width: 300px;
 	height: 300px;
 	margin-top: 150px;
-
+	margin-right: 40px;
 	float: right;
 }
 .about-text p{
@@ -783,5 +783,131 @@ transform: translateZ(-200px);
 	transition: 2s transform;
 	left: 650px;
 	top: 300px;
-	z-index: 1;
+
+}
+
+
+.team2 .box {
+    position: relative;
+	perspective: 1000px;
+
+}
+.box .box-img {
+	
+    transform: rotateY(0);
+    transition: all 0.50s ease-in-out 0s;
+}
+.box .box-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: skyblue;
+    opacity: 0;
+    transform: rotateY(90deg);
+	transition: all 0.50s ease-in-out 0s;
+	padding-top: 60px;
+	box-sizing: border-box;
+
+}
+.box .title {
+    font-size: 20px;
+    color: #666666;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+ .box .description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    color: #ffffff;
+    padding: 0px 35px;
+}
+.box .title:after, .box .description:after {
+    content: "";
+    width: 80%;
+    display: block;
+    border-bottom: 1px solid #ffb701;
+    border-bottom-color: #ffffff;
+    margin: 15px auto;
+}
+.button {
+	color: #1B9AF7;
+	background-color: #EEE;
+	border-color: #EEE;
+	font-weight: 300;
+	font-size: 16px;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 40px;
+	margin: 0;
+	display: inline-block;
+	appearance: none;
+	cursor: pointer;
+	border: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-transition-property: all;
+			transition-property: all;
+	-webkit-transition-duration: .3s;
+			transition-duration: .3s;
+}
+.button-glow {
+	-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	-webkit-animation-name: glowing;
+			animation-name: glowing; 
+}
+.button-glow:active, .button-glow.active, .button-glow.is-active {
+	  -webkit-animation-name: none;
+			  animation-name: none; 
+}
+.button-border {
+	background: none;
+	border-width: 2px;
+	border-style: solid;
+	line-height: 36px; 
+}
+.button-border:hover {
+	  background-color: rgba(27,154,247, 0.9); 
+
+	}
+
+	  
+.button-border:active,  .button-border.active{
+	  -webkit-box-shadow: none;
+			  box-shadow: none;
+	  text-shadow: none;
+	  -webkit-transition-property: all;
+			  transition-property: all;
+	  -webkit-transition-duration: .3s;
+			  transition-duration: .3s; 
+}
+.button-rounded {
+	border-radius: 4px; 
+}
+
+.works a{
+	position: absolute;
+	top: 380px;
+	left: 450px;
+	width: 300px;
+}
+.team a{
+	position: absolute;
+	top: 280px;
+	left: 100px;
+	width: 300px;
+	color: #fff;
+}
+.team a:hover{
+	background: blueviolet;
 }
